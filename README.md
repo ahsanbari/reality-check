@@ -22,6 +22,8 @@ Phase 2  Persona matrix ───── 5 demographic categories + a11y/context 
 Phase 3  Mom Test interviews ─ problem validation, product hidden
 Phase 4  Embodied UI testing ─ parallel agents walk your app in character
 Phase 5  Adversarial pass ──── Kill Agent · Refuter · message–market audit
+                              + compliance & security pass (GDPR/CCPA flags,
+                                policy-vs-code diff, security baseline)
                               + external research (competitors, Reddit, signals)
 Phase 6  Verdict ───────────── scored rubric, fix list, one next action
 ```
@@ -51,6 +53,10 @@ Simulated users have one failure mode: they flatter you. Reality Check is built 
 ### Built-in methods
 
 The Mom Test (Fitzpatrick) · Sean Ellis PMF test · Jobs-to-be-Done + forces of progress · 5-second test · Nielsen's usability heuristics · trust-ladder & price probes · retention ("it's next Tuesday — would you open this?") · external evidence research (competitors, Reddit sentiment, timing signals) · Assumption Graveyard with the cheapest real-world test for each unproven belief.
+
+### Compliance & security pass
+
+Personas tell you whether users *would* trust the product; this pass tells you whether they *should*. It builds a data inventory from the code (not the marketing copy), flags plausibly applicable regimes (GDPR/CCPA/COPPA/PCI, app-store data labels, AI-disclosure rules), diffs every privacy promise against actual behavior ("never shared" claims get grepped, then checked against where data really flows), and runs a security baseline. When [Cloudflare's `security-audit` skill](https://github.com/cloudflare/security-audit-skill) or Claude Code's `/security-review` is installed, the deep code audit is **delegated to it** and the confirmed findings folded in — Cloudflare's finder/verifier separation matches this skill's Refuter philosophy exactly. A CRITICAL finding blocks a VALIDATED verdict. Everything is framed as an engineering-grade flag pass, not legal advice.
 
 ---
 

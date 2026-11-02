@@ -64,6 +64,15 @@ Per category: average severity from past-behavior evidence, the strongest single
 piece of evidence the problem is real, and the strongest evidence it isn't.
 State plainly if the problem failed validation and the rest is usability data.
 
+## Compliance & Security
+
+Data inventory in one paragraph (what's collected, where it flows, incl. AI
+vendors). Flagged-regimes table. Findings by severity (CRITICAL/HIGH/MEDIUM),
+each with evidence citation and remediation sketch. Name what was delegated
+(e.g. Cloudflare security-audit, /security-review) vs. run via the fallback
+checklist. Standing caveat: engineering-grade flag pass, not legal advice —
+CRITICAL/HIGH items are "ask a professional now" markers.
+
 ## Assumption Graveyard
 
 | Unproven assumption | Why it's load-bearing | Cheapest real-world test | Success signal |

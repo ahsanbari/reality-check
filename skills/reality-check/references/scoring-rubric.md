@@ -68,6 +68,8 @@ Evidence: 5-second test results per category, Phase 5 promise-vs-experience diff
 
 Report all six (with N/A where fidelity mode forbids scoring) plus a weighted composite: **Problem–Solution Fit ×2** (nothing else matters if it fails), all others ×1.
 
+Compliance & security wiring: CRITICAL findings from the compliance & security pass (see `references/compliance-security.md`) cap Trust & Net Benefit at 40 and block VALIDATED outright; HIGH findings are scored evidence inside Trust & Net Benefit.
+
 Gates, applied after the Kill Agent survives review:
 
 | Verdict | Requirement |
